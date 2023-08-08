@@ -774,10 +774,10 @@ ee-first@1.1.1:
   resolved "https://mirrors.cloud.tencent.com/npm/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-ejs@3.1.8, ejs@^3.1.6:
-  version "3.1.8"
-  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.8.tgz#758d32910c78047585c7ef1f92f9ee041c1c190b"
-  integrity sha512-/sXZeMlhS0ArkfX2Aw780gJzXSMPnKjtspYZv+f3NiKLlubezAHDU5+9xz6gd3/NhG3txQCo6xlglmTS+oTGEQ==
+ejs@3.1.9, ejs@^3.1.6:
+  version "3.1.9"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-3.1.9.tgz#03c9e8777fe12686a9effcef22303ca3d8eeb361"
+  integrity sha512-rC+QVNMJWv+MtPgkt0y+0rVEIdbtxVADApW9JXrUVlzHetgcyczP/E7DJmWJ4fJCZF2cPcBk0laWO9ZHMG3DmQ==
   dependencies:
     jake "^10.8.5"
 
@@ -1150,19 +1150,19 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hexo-bilibili-bangumi@^1.8.3:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.8.3.tgz#9384a7da3dfde6350c28277c052a6e7fc259a721"
-  integrity sha512-m1U/lA9/3634J2PSCLa4/CImYgA2XTECplQFC8UIyeCeevJG26WKFGCe4UCshjy1xOkZLlxf0WMEOINy7pmkkA==
+hexo-bilibili-bangumi@^1.8.8:
+  version "1.8.8"
+  resolved "https://registry.yarnpkg.com/hexo-bilibili-bangumi/-/hexo-bilibili-bangumi-1.8.8.tgz#84984dbaa98ad4e8da9151a8acc58d7c9288c475"
+  integrity sha512-XaWV0Iq0JkJgRUKGsXG4xnyR5dYEbANbHfSUXiD8AWQYY9RN/JznGncb/FXxFGPyJwu+gqoq1Y6Sre7QlIBD4w==
   dependencies:
     "@babel/runtime" "^7.18.0"
     axios "^1.0.0"
     bangumi-data "^0.3.91"
     cheerio "^1.0.0-rc.11"
-    ejs "3.1.8"
+    ejs "3.1.9"
     hexo-fs "^4.0.0"
-    hexo-i18n "^1.0.0"
-    hexo-log "^3.0.0"
+    hexo-i18n "^2.0.0"
+    hexo-log "^4.0.1"
     progress "^2.0.3"
     tunnel "^0.0.6"
 
@@ -1282,6 +1282,13 @@ hexo-i18n@^1.0.0:
   dependencies:
     sprintf-js "^1.0.3"
 
+hexo-i18n@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hexo-i18n/-/hexo-i18n-2.0.0.tgz#ec7abc160ffef202524f3ff8076b85d5701c447b"
+  integrity sha512-dkUXecEtChaQMdTHN4WR13c8GwKqjbSOZPJS9qDqV6Ebnb77Wa/nQzWFckhP0dCps3a9lUQBd8hYGOMbOosiQQ==
+  dependencies:
+    sprintf-js "^1.1.2"
+
 hexo-log@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/hexo-log/-/hexo-log-0.2.0.tgz#d30fd45e1a12a83c88033586640485efc5df5a6f"
@@ -1301,6 +1308,13 @@ hexo-log@^3.0.0, hexo-log@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/hexo-log/-/hexo-log-3.2.0.tgz#958c8ea681f7575afcd554f39c8e09f46461d317"
   integrity sha512-fk7jOW3hvKiAv4Q/d8UxaQlARwcv+5KjGcnxexUrqBqyWbMCLmw7jhMHTSRLNNQpaoTlF5ff+kQkPi4yhp9iag==
+  dependencies:
+    picocolors "^1.0.0"
+
+hexo-log@^4.0.1:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/hexo-log/-/hexo-log-4.1.0.tgz#54b42c250335067b5c60b4137f501607454efda0"
+  integrity sha512-i2Sgxk8Cgx5viSjq5qW5N/rBFfwoCKQcH8qnnW1fawCapcdEAhIsq+Y3vbrs9bssyDlyU6Vqm4oQmosREaNI7Q==
   dependencies:
     picocolors "^1.0.0"
 
@@ -2683,7 +2697,7 @@ split-string@^3.0.1, split-string@^3.0.2:
   dependencies:
     extend-shallow "^3.0.0"
 
-sprintf-js@^1.0.3:
+sprintf-js@^1.0.3, sprintf-js@^1.1.2:
   version "1.1.2"
   resolved "https://mirrors.cloud.tencent.com/npm/sprintf-js/-/sprintf-js-1.1.2.tgz#da1765262bf8c0f571749f2ad6c26300207ae673"
   integrity sha512-VE0SOVEHCk7Qc8ulkWw3ntAzXuqf7S2lvwQaDLRnUeIEaKNQJzV6BwmLKhOqT61aGhfUMrXeaBk+oDGCzvhcug==
